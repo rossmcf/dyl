@@ -1,0 +1,43 @@
+baseURL = "https://danylandsker.cymru"
+languageCode = "cy"
+title = "Dan y Landsker"
+theme = "mediumish"
+summaryLength = 25
+copyright = "Dan y Landsker"
+enableEmoji = true
+publishDir = "docs"
+#disqusShortname = "your-shortname-here"
+#googleAnalytics = "UA-1XXXXXXX1-1"
+
+[params]
+  #logo = "/images/logo.png"
+  #description ="the clean blog!"
+  #mailchimp = "you can provide a mailchimp-link here"
+
+[params.author]
+  name = "John Doe"
+  thumbnail = "/images/author.png"
+  description = "Creator of this blog."
+
+[params.index]
+  picture = "/images/author.png"
+  title = "Dan y Landsker"
+  subtitle = "I'm a unique placeholder. Working here and there!"
+  mdtext = '''
+Currently trying to get this blog running, still don't know what the blog will be about!\
+**This textblock is a demonstration of the mdtext-param.**\
+### This is a markdown heading
+'''
+  alertbar = false
+
+[params.social]
+  github = "<username>"
+  linkedin = "<username>"
+  xing = "<username>"
+
+## Main Menu
+[[menu.main]]
+    name = "Amdanom"
+    identifier = "amdanom"
+    weight = 200
+    url = "/static/amdanom"
