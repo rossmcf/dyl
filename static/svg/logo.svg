@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="632 280 112 121" width="112" height="121">
+  <defs>
+    <font-face font-family="Lehigh Personal" font-size="24" panose-1="2 6 4 3 3 5 3 0 2 3" units-per-em="1000" underline-position="-18.333333" underline-thickness="130.83333" slope="0" x-height="432.5" cap-height="625" ascent="791.673" descent="-208.335" font-weight="800">
+      <font-face-src>
+        <font-face-name name="LehighPersonal-Black"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Lehigh Personal" font-size="24" panose-1="2 6 4 3 3 5 3 0 2 3" units-per-em="1000" underline-position="-51.666667" underline-thickness="48.333333" slope="0" x-height="420.83333" cap-height="625" ascent="791.673" descent="-208.335" font-weight="400">
+      <font-face-src>
+        <font-face-name name="LehighPersonal-Regular"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.9.2 
+    <dc:date>2018-11-09 22:28:21 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-dasharray="none" fill-opacity="1" stroke="none" fill="none" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_14">
+        <path d="M 632 332 L 632 356 C 632 356 728 344 744 396 L 740 344 Z" fill="#012b36"/>
+      </g>
+      <g id="Graphic_31">
+        <text transform="translate(632 352)" fill="#012b36">
+          <tspan font-family="Lehigh Personal" font-size="24" font-weight="800" fill="#012b36" x="0" y="24">Dan </tspan>
+          <tspan font-family="Lehigh Personal" font-size="24" font-weight="400" fill="#012b36" y="24">y</tspan>
+        </text>
+      </g>
+      <g id="Graphic_32">
+        <text transform="translate(632 372)" fill="#012b36">
+          <tspan font-family="Lehigh Personal" font-size="24" font-weight="800" fill="#012b36" x="0" y="24">Landsker</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <path d="M 632 280 L 632 352 C 632 352 736 344 744 396 L 744 280 Z" fill="#859901"/>
+      </g>
+    </g>
+  </g>
+</svg>
