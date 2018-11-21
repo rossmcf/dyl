@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-scroller nav a {
 	font-size: 1.5rem;
 	font-weight: bold;
-	color:inherit;
+	color: #fdf6e3;
 }
 
 .blue:hover {
@@ -159,7 +159,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .top-story {
 	height: 20rem;
-	/*background-color: #93a1a1;*/
 }
 
 .section-title {
