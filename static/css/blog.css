@@ -59,35 +59,26 @@ h1, h2, h3, h4, h5, h6 {
 .nav-scroller nav a {
 	font-size: 1.5rem;
 	font-weight: bold;
-	color:#fdf6e3;
-}
-
-.nav-scroller nav a:hover {
-	text-decoration: none;
+	color:inherit;
 }
 
 .blue:hover {
-	background-color:#268bd2;
+	text-decoration: underline #268bd2;
 }
 .orange:hover{
-	background-color: #cb4b16;
+	text-decoration: underline #cb4b16;
 }
 .magenta:hover{
-	background-color: #d33682;
+	text-decoration: underline #d33682;
 }
 .violet:hover{
-	background-color: #6c71c4;
+	text-decoration: underline #6c71c4;
 }
 
 .nav-scroller .nav-link {
 	padding-top: .75rem;
 	padding-bottom: .75rem;
 	font-size: .875rem;
-}
-
-.card-img-right {
-	height: 100%;
-	border-radius: 0 3px 3px 0;
 }
 
 .flex-auto {
@@ -156,9 +147,9 @@ h1, h2, h3, h4, h5, h6 {
  */
 .blog-footer {
 	padding: 2.5rem 0;
-	color: #999;
+	color: #fdf6e3;
 	text-align: center;
-	background-color: #f9f9f9;
+	background-color: #002b36;
 	border-top: .05rem solid #e5e5e5;
 }
 
@@ -166,3 +157,21 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 0;
 }
 
+.top-story {
+	height: 20rem;
+	/*background-color: #93a1a1;*/
+}
+
+.section-title {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.headline {
+	font-weight: bold;
+	font-size: 2rem
+}
+
+.story-card {
+	border-top: .05rem solid #859900;
+}
