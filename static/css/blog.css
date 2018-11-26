@@ -172,5 +172,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .story-card {
-	border-top: .05rem solid #859900;
+	border-top: .075rem solid #859900;
+	background-color: #eee8d5;
+}
+
+.story-card-md {
+	height: 13rem;
+}
+
+.story-card-sm {
+	height: 4rem;
 }

@@ -19,110 +19,19 @@
 </head>
 
 <body>
-<div class="container-fluid" id="topline">
-	<div class="container ">
+<div class="container-fluid" id="topline" >
+	<div class="container " >
 		<header class="blog-header">
 			<div class="row flex-nowrap">
 				<div class="col-md-6 text-left justify-content-end my-4">
 					<a class="blog-header-logo text-light" href="#">
-					{{ $big := resources.Get "logo.svg" }}
-								{{ $logo := $big | resources.Minify }}
-								{{ $logo.Content | safeHTML }}
+						<h1>Dan y Landsker</h1>
 					</a><!--logo -->
 				</div>
 			</div><!-- header row -->
-            <div class="row flex-nowrap border-top border-left border-right pt-2 ">
-		<div class="nav-scroller ">
-			<nav class="nav d-flex justify-content-between">
-				<a class="px-3 blue" href="#">Newyddion</a>
-				<a class="px-3 orange" href="#">Erthyglau</a>
-				<a class="px-3 magenta" href="#">Digwyddiadau</a>
-				<a class="px-3 violet" href="#">Dysgwyr</a>
-			</nav>
-		</div>
-	</div><!--navrow-->
-
 		</header>
 	</div><!--inside-->
 </div><!--fluid-->
-
-<main class="container border-left border-right">
-	<div class="row py-4">
-		<div class="col-md-2 " >
-			<header >
-				<h3 class="section-title">Penawdau</h3>
-			</header>
-		</div>
-		<div class="row col-md-8">
-			<div class="col-md-5">
-				<h3 class="headline">Rhywbeth pwysig yn y byd Cymraeg</h3>
-				<p class="standfirst">Fyddwch chi ddim yn credi beth digwyddodd.</p>
-			</div>
-			<div class="col-md-7" >
-				<img width="100%" src="https://www.nationaltrust.org.uk/images/1431735125251-svw-c88-1011-0060---crown-copyright-2015-visit-wales.jpg" />
-			</div>
-		</div>
-
-	</div>
-
-	<section class="row py-4 border-top">
-		<div class="col-md-2">
-			<header >
-				<h3 class="section-title">Newyddion Diweddaraf</h3>
-			</header>
-		</div>
-		<div class="row col-md-8">
-			<div class="col-md-4">
-				<div>
-					<img width="100%" src="https://www.nationaltrust.org.uk/images/1431735125251-svw-c88-1011-0060---crown-copyright-2015-visit-wales.jpg" />
-				</div>
-				<h4 >Rhywbeth pwysig yn y byd Cymraeg</h4>
-			</div>
-			<div class="col-md-4">
-				<div >
-					<img width="100%" src="https://www.nationaltrust.org.uk/images/1431735125251-svw-c88-1011-0060---crown-copyright-2015-visit-wales.jpg" />
-				</div>
-				<h4 class="px-1">Rhywbeth pwysig yn y byd Cymraeg</h4>
-			</div>
-			<div class="col-md-4">
-				<div class="story-card">
-					<h5 >Stori Fach</h5>
-					<p>Dim mor bwysig.</p>
-				</div>
-				<div class="story-card">
-					<h5 >Stori Fach</h5>
-					<p>Dim mor bwysig.</p>
-				</div>
-				<div class="story-card">
-					<h5 >Stori Fach</h5>
-					<p>Dim mor bwysig.</p>
-				</div>
-			</div>
-		</div>
-
-	</section><!-- /.row -->
-
-	<section class="row py-4 border-top">
-		<div class="col-md-2">
-			<header >
-				<h3 class="section-title">Digwyddiadau</h3>
-			</header>
-		</div>
-		<div class="col-md-8 ">
-			Rhestr o ddigwyddiadau
-		</div>
-
-	</section><!-- /.row -->
-
-</main><!-- /.container -->
-
-<footer class="blog-footer">
-	<p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.
-	</p>
-	<p>
-		<a href="#">Back to top</a>
-	</p>
-</footer>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
