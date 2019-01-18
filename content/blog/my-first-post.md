@@ -1,5 +1,6 @@
 ---
-title: "My First Post"
+title: "Stori Gyntaf"
+standfirst: "Rhywbeth pwysig yn y byd Cymraeg."
 date: 2018-10-07T11:17:14+02:00
 publishdate: 2018-10-07T11:17:14+02:00
 lastmod: 2018-10-07T11:17:14+02:00
