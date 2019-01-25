@@ -54,7 +54,7 @@
 			</header>
 		</div>
 
-    {{ range first 1 (where .Pages.ByDate "Section" "blog") }}
+    {{ range first 1 (where .Pages.ByDate.Reverse "Section" "blog") }}
 		<div class="row col-md-8">
 			<div class="d-inline-flex px-3">
 				<a href="{{ .Permalink }}" class="story-link">
@@ -81,7 +81,7 @@
 		</div>
 
 		<div class="row col-md-8">
-        {{ range first 2 (after 1 (where .Pages.ByDate "Section" "blog"))}}
+        {{ range first 2 (after 1 (where .Pages.ByDate.Reverse "Section" "blog"))}}
 			<div class="col-md-4">
 				<a href="{{ .Permalink }}" class="story-link">
 					<div class="story-card story-card-md pb-2">
@@ -95,7 +95,7 @@
 			</div>
         {{ end }}
 			<div class="col-md-4">
-            {{ range first 3 (after 3 (where .Pages.ByDate "Section" "blog"))}}
+            {{ range first 3 (after 3 (where .Pages.ByDate.Reverse "Section" "blog"))}}
 				<a href="{{ .Permalink }}" class="story-link">
 					<div class="story-card story-card-sm mb-2">
 						<h5 class="px-1 pt-1">{{ .Title | title }}</h5>

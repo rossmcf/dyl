@@ -2,32 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad8b98fb-a1eb-4f85-9b9d-054e7928d9e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/blog/digwyddiadau/_index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/blog/erthyglau/_index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/blog/newyddion/_index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/_default/baseof.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/_default/old_single.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/partials/_shared/js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/blog/dysgwyr/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/blog/dysgwyr/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/blog/dysgwyr/fourth.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/blog/dysgwyr/fourth.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/blog/eighth.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/blog/newyddion/eighth.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/blog/fifth.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/blog/erthyglau/fifth.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/blog/my-first-post.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/blog/newyddion/my-first-post.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/blog/ninth.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/blog/digwyddiadau/ninth.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/blog/second.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/blog/erthyglau/second.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/blog/seventh.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/blog/erthyglau/seventh.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/blog/third.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/blog/digwyddiadau/third.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archetypes/default.md" beforeDir="false" afterPath="$PROJECT_DIR$/archetypes/default.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/blog/newyddion/my-first-post.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/blog/newyddion/first.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/_default/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/single.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/_shared/alertbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/_shared/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/_shared/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/_shared/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/_shared/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/_shared/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/_shared/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/single-partials/share.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/additional.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/additional.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/blog.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,14 +15,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.52020204">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/layouts/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="560">
-                  <caret line="70" column="18" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+                <state relative-caret-position="680">
+                  <caret line="97" column="65" selection-start-line="97" selection-start-column="65" selection-end-line="97" selection-end-column="65" />
                   <folding>
                     <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
@@ -66,11 +45,47 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/layouts/_default/single.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="646">
-                  <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+                <state relative-caret-position="510">
+                  <caret line="30" selection-start-line="30" selection-end-line="30" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/content/blog/newyddion/first.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="136">
+                    <caret line="8" column="14" selection-end-line="12" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/archetypes/default.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="102">
+                    <caret line="6" selection-start-line="6" selection-end-line="6" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/content/blog/newyddion/argyfwng.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="136">
+                    <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+                  </first_editor>
+                  <second_editor />
                 </state>
               </provider>
             </entry>
@@ -126,7 +141,6 @@
         <option value="$PROJECT_DIR$/content/blog/dysgwyr/fourth.md" />
         <option value="$PROJECT_DIR$/themes/mediumish/layouts/_default/baseof.html" />
         <option value="$PROJECT_DIR$/layouts/partials/_shared/footer.html" />
-        <option value="$PROJECT_DIR$/layouts/index.html" />
         <option value="$PROJECT_DIR$/layouts/partials/_shared/js.html" />
         <option value="$PROJECT_DIR$/layouts/_default/baseof.html" />
         <option value="$PROJECT_DIR$/config.toml" />
@@ -138,6 +152,10 @@
         <option value="$PROJECT_DIR$/content/blog/newyddion/_index.md" />
         <option value="$PROJECT_DIR$/static/css/blog.css" />
         <option value="$PROJECT_DIR$/layouts/_default/single.html" />
+        <option value="$PROJECT_DIR$/content/blog/newyddion/first.md" />
+        <option value="$PROJECT_DIR$/archetypes/default.md" />
+        <option value="$PROJECT_DIR$/content/blog/newyddion/argyfwng.md" />
+        <option value="$PROJECT_DIR$/layouts/index.html" />
       </list>
     </option>
   </component>
@@ -160,24 +178,25 @@
             <path>
               <item name="dyl" type="b2602c69:ProjectViewProjectNode" />
               <item name="dyl" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+              <item name="archetypes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dyl" type="b2602c69:ProjectViewProjectNode" />
               <item name="dyl" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-              <item name="_default" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dyl" type="b2602c69:ProjectViewProjectNode" />
               <item name="dyl" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dyl" type="b2602c69:ProjectViewProjectNode" />
               <item name="dyl" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="newyddion" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -341,16 +360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/blog/newyddion/my-first-post.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="170">
-            <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/blog/newyddion/_index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -446,22 +455,52 @@
     <entry file="file://$PROJECT_DIR$/themes/mediumish/layouts/_default/single.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/_default/single.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/blog/newyddion/first.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="14" selection-end-line="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archetypes/default.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="102">
+            <caret line="6" selection-start-line="6" selection-end-line="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/blog/newyddion/argyfwng.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/layouts/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="70" column="18" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+        <state relative-caret-position="680">
+          <caret line="97" column="65" selection-start-line="97" selection-start-column="65" selection-end-line="97" selection-end-column="65" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layouts/_default/single.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
         </state>
       </provider>
     </entry>
