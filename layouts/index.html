@@ -58,10 +58,10 @@
 		<div class="row col-md-8">
 			<div class="d-inline-flex px-3">
 				<a href="{{ .Permalink }}" class="story-link">
-					<div class="d-inline-flex story-card">
+					<div class="d-inline-flex story-card top-story">
 						<div class="col-md-5 px-0">
-							<h3 class="headline pl-1 pr-2">{{ .Title | title }}</h3>
-							<p class="standfirst pl-1 pr-2">{{ .Params.standfirst }}</p>
+							<h3 class="headline pl-1 pr-4">{{ .Title | title }}</h3>
+							<p class="standfirst pl-1 pr-4">{{ .Params.standfirstSummary }}</p>
 						</div><!--headline col-->
 						<div class="col-md-7 px-0">
 							<img class="img-fluid" src="{{ .Params.image }}"/>

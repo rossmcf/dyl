@@ -158,17 +158,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .top-story {
-	height: 20rem;
+	/*height: 14rem;*/
 }
 
 .section-title {
-	font-weight: bold;
+	font-weight: lighter;
 	font-size: 1.5rem;
 }
 
 .headline {
-	font-weight: bold;
-	font-size: 2rem
+	font-size: 1.5rem
 }
 
 .story-card {
@@ -186,6 +185,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .story-card-sm h5 {
 	font-size: 1rem;
+}
+
+.story-card .standfirst {
+	position: absolute;
+	bottom: 0;
 }
 
 a {
@@ -206,6 +210,20 @@ a:hover {
 	opacity: 0.7;
 }
 
+.article .headline {
+	font-size: 2rem;
+}
+
 .article .standfirst {
-	font-size: 1.5rem;
+	font-size: 1.0rem;
+	font-weight: bolder;
+	line-height: 1.2;
+}
+
+.article p {
+	font-size: 1.1rem;
+}
+
+.figure {
+	width: 100%;
 }

@@ -21,12 +21,14 @@
             <div class="d-inline-flex px-3">
                 <div class=" ">
                     <header>
-                        <h3 class="headline pl-1 pr-2 mb-4">{{ .Title | title }}</h3>
+                        <h3 class="headline pl-1 mb-4">{{ .Title | title }}</h3>
                         <p class="standfirst pl-1 pr-2">{{ .Params.standfirst }}</p>
                     </header>
-                    <div class="d-block pt-1 px-1">
-                        <img class="img-fluid" src="{{ .Params.image }}"/>
-                    </div><!--img col-->
+                    <figure class="figure ">
+                        <img class="figure-img img-fluid" src="{{ .Params.image }}"/>
+                        <figcaption class="figure-caption text-right">{{ .Params.imageCaption }}</figcaption>
+                    </figure>
+                    {{ .Content }}
                 </div>
             </div>
         </div>
