@@ -3,7 +3,7 @@ title: "Prosiect i hybu twristiaeth yn derbyn arian Ewropeaidd"
 date: 2019-01-25T11:15:15Z
 standfirstSummary: "€1.9m o'r UE ar gyfer twristiaeth Cymru ac Iwerddon"
 standfirst: "Mae prosiect newydd sy'n gobeithio rhoi hwb i dwristiaeth yng Nghymru ac Iwerddon wedi derbyn grant o €1.9m gan yr Undeb Ewropeaidd."
-image: "https://thefreelancehistorywriter.files.wordpress.com/2013/03/stdavidscathedral.jpg"
+image: "/images/blog/8.jpg"
 imageCaption: "Mae'r eglwys gadeiriol yn Nhyddewi yn atyniad poblogaidd gyda thwristiaid"
 draft: false
 ---

@@ -11,7 +11,9 @@
             <!-- Article metadata goes here. -->
             <div class="article-meta">
                 <a target="_blank" class="link-dark">{{ .Site.Params.author.name }}</a><br>
-                {{ dateFormat "Jan 2, 2006" .PublishDate }}
+				<time datetime={{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}>
+					{{ index $.Site.Data.dyddiadau (printf "%d" .Date.Day) }} {{ index $.Site.Data.misoedd (printf "%d" .Date.Month) }} {{ .Date.Year }}
+					</time>
                 </span>
                 {{/*{{ printf "%+v" .Params }}*/}}
             </div>

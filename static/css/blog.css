@@ -65,13 +65,16 @@ h1, h2, h3, h4, h5, h6 {
 .blue:hover {
 	text-decoration: underline #268bd2;
 }
-.orange:hover{
+
+.orange:hover {
 	text-decoration: underline #cb4b16;
 }
-.magenta:hover{
+
+.magenta:hover {
 	text-decoration: underline #d33682;
 }
-.violet:hover{
+
+.violet:hover {
 	text-decoration: underline #6c71c4;
 }
 
@@ -125,6 +128,7 @@ h1, h2, h3, h4, h5, h6 {
 	border-radius: 2rem;
 }
 
+
 /*
  * Blog posts
  */
@@ -166,13 +170,9 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 1.5rem;
 }
 
-.headline {
-	font-size: 1.5rem
-}
 
 .story-card {
 	border-top: .075rem solid #859900;
-	background-color: #fdf6e3;
 }
 
 .story-card-md {
@@ -193,26 +193,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-	color:inherit;
+	color: inherit;
 }
 
 a:hover {
-	color:inherit;
+	color: inherit;
 	text-decoration: none;
 }
 
 
-.story-link:hover > .story-card {
-	background-color: #eee8d5;
+.story-link:hover > .story-card  .headline {
+	color: #859900;
 }
 
 .story-link:hover img {
 	opacity: 0.7;
 }
 
-.article .headline {
-	font-size: 2rem;
-}
 
 .article .standfirst {
 	font-size: 1.0rem;
@@ -227,3 +224,39 @@ a:hover {
 .figure {
 	width: 100%;
 }
+
+.headline {
+	font-size: 1.25rem;
+}
+
+.section-title {
+	font-size: 1.25rem;
+	color: #859900;
+}
+
+/*Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.headline {
+	}
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	.headline {
+	}
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.headline {
+		font-size: 1.75rem;
+	}
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.headline {
+	}
+
+}
+
