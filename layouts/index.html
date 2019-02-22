@@ -1,161 +1,103 @@
 <!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<link rel="icon" href="../../../../favicon.ico">
-
-	<title>Dan y Landsker</title>
-
-	<!-- Bootstrap core CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-	      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-	<!-- Custom styles for this template -->
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-	<link href="css/blog.css" rel="stylesheet">
-</head>
+<html lang="{{ .Site.LanguageCode }}">
+{{- partial "_shared/head.html" . -}}
 
 <body>
-<div class="container-fluid" id="topline">
-	<div class="container ">
-		<header class="blog-header">
-			<div class="row flex-nowrap">
-				<div class="col-md-6 text-left justify-content-end my-4">
-					<a class="blog-header-logo text-light" href="#">
-                    {{ $big := resources.Get "logo.svg" }}
-								{{ $logo := $big | resources.Minify }}
-								{{ $logo.Content | safeHTML }}
-					</a><!--logo -->
-				</div>
-			</div><!-- header row -->
-			<div class="row flex-nowrap border-top border-left border-right pt-2 ">
-				<div class="nav-scroller ">
-					<nav class="nav d-flex justify-content-between">
-						<a class="px-3 blue" href="#">Newyddion</a>
-						<a class="px-3 orange" href="#">Erthyglau</a>
-						<a class="px-3 magenta" href="#">Digwyddiadau</a>
-						<a class="px-3 violet" href="#">Dysgwyr</a>
-					</nav>
-				</div>
-			</div><!--navrow-->
+{{- partial "_shared/navbar.html" . -}}
 
-		</header>
-	</div><!--inside-->
-</div><!--fluid-->
+<main class="container">
+    <section class="row py-4">
+        <div class="col-md-2 ">
+            <header>
+                <h3 class="section-title">Penawdau</h3>
+            </header>
+        </div>
 
-<main class="container border-left border-right">
-	<div class="row py-4">
-		<div class="col-md-2 d-none d-md-inline-flex">
-			<header>
-				<h3 class="section-title">Penawdau</h3>
-			</header>
-		</div>
-
-    {{ range first 1 (where .Pages.ByDate.Reverse "Section" "blog") }}
-		<div class="row col-md-8">
-			<div class="d-inline-flex px-3">
-				<a href="{{ .Permalink }}" class="story-link">
-					<div class="d-inline-flex story-card top-story">
-						<div class="col-md-5 px-0">
-							<h3 class="headline pl-1 pr-4">{{ .Title | title }}</h3>
-							<p class="standfirst pl-1 pr-4 d-none d-lg-inline">{{ .Params.standfirstSummary }}</p>
-						</div><!--headline col-->
-						<div class="col-md-7 px-0 d-inline-block">
-							<img class="img-fluid" src="{{ .Params.image }}"/>
-						</div><!--img col-->
-					</div>
-				</a>
-			</div>
-		</div>
-    {{ end }}
-	</div>
-
-	<section class="row py-4 border-top">
-		<div class="col-md-2 d-none d-md-inline-flex">
-			<header>
-				<h3 class="section-title">Newyddion Diweddaraf</h3>
-			</header>
-		</div>
-
-		<div class="row col-md-8">
-        {{ range first 2 (after 1 (where .Pages.ByDate.Reverse "Section" "blog"))}}
-			<div class="col-md-4">
-				<a href="{{ .Permalink }}" class="story-link">
-					<div class="story-card story-card-md pb-2">
-						<div class="d-none d-md-block">
-							<img class="d-none d-md-block" width="100%"
-							     src="{{ .Params.image }}"/>
-						</div>
-						<h4 class="px-1 pt-1 ">{{ .Title | title }}</h4>
-					</div><!--story-card-->
-				</a>
-			</div>
+        {{ range first 1 (where .Pages.ByDate.Reverse "Section" "blog") }}
+            <div class="row col-md-8">
+                <div class="d-inline-flex px-3">
+                    <a href="{{ .Permalink }}" class="story-link">
+                        <div class="story-card top-story">
+                            <img class="img-fluid" src="{{ .Params.image }}"/>
+                            <header class="pt-2 pb-0">
+                                <h3 class="headline ">{{ .Title | title }}</h3>
+                            </header>
+                            <div class="pt-4 mt-4 d-none d-lg-block">
+                                <p class="standfirst mb-auto pl-1 mt-4 pr-4 ">{{ .Params.standfirstSummary }}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         {{ end }}
-			<div class="col-md-4">
-            {{ range first 3 (after 3 (where .Pages.ByDate.Reverse "Section" "blog"))}}
-				<a href="{{ .Permalink }}" class="story-link">
-					<div class="story-card story-card-sm mb-2">
-						<h5 class="px-1 pt-1">{{ .Title | title }}</h5>
-					</div>
-				</a>
+    </section>
+
+    <section class="row py-4 border-top">
+        <div class="col-md-2">
+            <header>
+                <h3 class="section-title">Newyddion Diweddaraf</h3>
+            </header>
+        </div>
+
+        <div class="row col-md-8">
+            {{ range first 2 (after 1 (where .Pages.ByDate.Reverse "Section" "blog"))}}
+                <div class="col-md-4">
+                    <a href="{{ .Permalink }}" class="story-link">
+                        <div class="story-card story-card-md pb-2 ">
+                            <div class="d-none d-md-block">
+                                <img class="d-none d-md-block" width="100%"
+                                     src="{{ .Params.image }}"/>
+                            </div>
+                            <h4 class="px-1 pt-1 ">{{ .Title | title }}</h4>
+                        </div><!--story-card-->
+                    </a>
+                </div>
             {{ end }}
-			</div>
-		</div>
+            <div class="col-md-4">
+                {{ range first 3 (after 3 (where .Pages.ByDate.Reverse "Section" "blog"))}}
+                    <a href="{{ .Permalink }}" class="story-link">
+                        <div class="story-card story-card-sm mb-2">
+                            <h5 class="px-1 pt-1">{{ .Title | title }}</h5>
+                        </div>
+                    </a>
+                {{ end }}
+            </div>
+        </div>
 
-	</section><!-- /.row -->
+    </section><!-- /.row -->
 
-	<section class="row py-4 border-top">
-		<div class="col-md-2">
-			<header>
-				<h3 class="section-title">Digwyddiadau</h3>
-			</header>
-		</div>
-		<div class="col-md-8 faux-table">
-			<div class="row pb-2 px-3 border-bottom">
-				<div class="col-2 px-0">Mercher<br/>21 Tachwedd</div>
-				<div class="col-3 px-0"><h4>Cyfarfod<br/>Dan y Landsker</h4></div>
-				<div class="col-5 px-0">The Pembroke Yeoman, Hwlffordd</div>
-				<div class="col-2 px-0">19:00 – 21:00</div>
-			</div>
-			<div class="row pb-2 px-3 border-bottom">
-				<div class="col-2 px-0">Iau<br/>22 Tachwedd</div>
-				<div class="col-3 px-0"><h4>CYD Hwlffordd</h4></div>
-				<div class="col-5 px-0">The Pembroke Yeoman, Hwlffordd</div>
-				<div class="col-2 px-0">21:00 –</div>
-			</div>
-			<div class="row pb-2 px-3 border-bottom">
-				<div class="col-2 px-0">Mawrth<br/>25 Rhagfyr</div>
-				<div class="col-3 px-0"><h4>Y Nadolig</h4></div>
-				<div class="col-5 px-0">Ym Mhobman</div>
-				<div class="col-2 px-0">Trwy'r Dydd</div>
-			</div>
-		</div>
-	</section><!-- /.row -->
-
+    <section class="row py-4 border-top">
+        <div class="col-md-2">
+            <header>
+                <h3 class="section-title">Digwyddiadau</h3>
+            </header>
+        </div>
+        <div class="col-md-8 faux-table">
+            <div class="row pb-2 px-3 border-bottom">
+                <div class="col-2 px-0">Mercher<br/>21 Tachwedd</div>
+                <div class="col-3 px-0"><h4>Cyfarfod<br/>Dan y Landsker</h4></div>
+                <div class="col-5 px-0">The Pembroke Yeoman, Hwlffordd</div>
+                <div class="col-2 px-0">19:00 – 21:00</div>
+            </div>
+            <div class="row pb-2 px-3 border-bottom">
+                <div class="col-2 px-0">Iau<br/>22 Tachwedd</div>
+                <div class="col-3 px-0"><h4>CYD Hwlffordd</h4></div>
+                <div class="col-5 px-0">The Pembroke Yeoman, Hwlffordd</div>
+                <div class="col-2 px-0">21:00 –</div>
+            </div>
+            <div class="row pb-2 px-3 border-bottom">
+                <div class="col-2 px-0">Mawrth<br/>25 Rhagfyr</div>
+                <div class="col-3 px-0"><h4>Y Nadolig</h4></div>
+                <div class="col-5 px-0">Ym Mhobman</div>
+                <div class="col-2 px-0">Trwy'r Dydd</div>
+            </div>
+        </div>
+    </section><!-- /.row -->
 </main><!-- /.container -->
 
-<footer class="blog-footer">
-	<p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.
-	</p>
-	<p>
-		<a href="#">Back to top</a>
-	</p>
-</footer>
+{{- partial "_shared/footer.html" . -}}
+{{- partial "_shared/js.html" . -}}
+{{ template "_internal/google_analytics.html" . }}
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
 </body>
 </html>
