@@ -17,6 +17,11 @@ fields:
     display_utc: true
     required: true
 - type: text
+  name: author
+  label: Awdur
+  config:
+    required: true
+- type: text
   name: standfirstSummary
   label: Standfirst Summary
   description: Brawddeg fer am y stori.
