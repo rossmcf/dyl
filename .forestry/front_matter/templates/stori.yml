@@ -39,3 +39,5 @@ fields:
 - type: boolean
   name: draft
   label: Drafft
+pages:
+- content/blog/newyddion/nigel-yn-nodi-llwyddiannau-disgyblion-aberdaugleddau.md
