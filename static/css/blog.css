@@ -239,6 +239,9 @@ a:hover {
 	font-weight: bold;
 	color: #859900;
 }
+	.story-card-md-title {
+		font-size: 1.2rem;
+	}
 
 /*Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
