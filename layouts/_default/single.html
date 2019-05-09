@@ -1,4 +1,5 @@
 {{ define "header"}}
+    {{- partial "_shared/title.html" . -}}
     {{- partial "_shared/navbar.html" . -}}
 {{ end }}
 
@@ -25,8 +26,8 @@
             <div class="d-inline-flex px-3">
                 <div class=" ">
                     <header>
-                        <h3 class="headline pl-1 mb-4">{{ .Title | title }}</h3>
-                        <p class="standfirst pl-1 pr-2">{{ .Params.standfirst }}</p>
+                        <h3 class="display-4 pl-1 mb-4">{{ .Title | title }}</h3>
+                        <p class="single-standfirst pl-1 pr-2">{{ .Params.standfirst }}</p>
                     </header>
                     <figure class="figure ">
                         <img class="figure-img img-fluid" src="{{ .Params.image }}"/>

@@ -1,6 +1,7 @@
 ---
 title: Nawfed
 date: 2018-10-07 09:40:14 +0000
+standfirstSummary: Dyma'r nawfed erthygl yn y restr.
 publishdate: 2018-10-07 09:40:14 +0000
 lastmod: 2018-10-07 09:40:14 +0000
 image: "/images/blog/9.jpg"

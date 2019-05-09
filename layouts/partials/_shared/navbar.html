@@ -1,27 +1,12 @@
 <!-- Begin Menu Navigation
 ================================================== -->
-<div class="container-fluid" id="topline">
-	<div class="container ">
-		<header class="blog-header">
-			<div class="row flex-nowrap">
-				<div class="col-md-6 text-left justify-content-end py-2">
-					<a class="blog-header-logo text-light" href="/">
-                    {{ $big := resources.Get "logo.svg" }}
-								{{ $logo := $big | resources.Minify }}
-								{{ $logo.Content | safeHTML }}
-					</a><!--logo -->
-				</div>
-				<div class="nav-scroller col-md-6 pt-4">
-					<nav class="nav d-flex justify-content-between align-bottom">
-						<a class="px-3 blue" href="#">Newyddion</a>
-						<a class="px-3 orange" href="#">Erthyglau</a>
-						<a class="px-3 magenta" href="#">Digwyddiadau</a>
-						<a class="px-3 violet" href="#">Dysgwyr</a>
-					</nav>
-				</div>
-			</div><!--navrow-->
-		</header>
-	</div><!--inside-->
-</div><!--fluid-->
+<div class="nav-scroller py-1 mb-2 border-bottom">
+	<nav class="nav d-flex justify-content-between">
+		<a class="p-2 text-muted" href="#">Newyddion</a>
+		<a class="p-2 text-muted" href="#">Erthyglau</a>
+		<a class="p-2 text-muted" href="#">Digwyddiadau</a>
+		<a class="p-2 text-muted" href="#">Dysgwyr</a>
+	</nav>
+</div>
 <!-- End Navigation
 ================================================== -->
