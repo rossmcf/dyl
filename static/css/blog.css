@@ -183,3 +183,7 @@ a.story-link {
 .row {
 	margin:0;
 }
+
+p {
+	font-size: 1.25rem;
+}

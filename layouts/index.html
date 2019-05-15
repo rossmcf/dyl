@@ -10,7 +10,9 @@
 	{{ range first 1 (where .Pages.ByDate.Reverse "Section" "blog") }}
 	<div class="jumbotron jumbotron-fluid bg-white py-2">
 		<div class="col-md-12 px-0">
-			<img class="img-fluid mb-2" src="{{ .Params.image }}"/>
+			<a href="{{ .Permalink }}" class="story-link">
+				<img class="img-fluid mb-2" src="{{ .Params.image }}"/>
+			</a>
 			<h4 class="blog-post-meta mb-0 section-link">{{ .Parent.Title }}</h4>
 			<a href="{{ .Permalink }}" class="story-link">
 				<h1 class="display-4">{{ .Title | title }}</h1>
@@ -36,7 +38,9 @@
 							<p class="list-standfirst my-3">{{ .Params.standfirstSummary }}</p>
 						</div>
 						<div class="col-md-4">
-							<img class="d-none d-md-block" width="100%" src="{{ .Params.image }}"/>
+							<a href="{{ .Permalink }}" class="story-link">
+								<img class="d-none d-md-block" width="100%" src="{{ .Params.image }}"/>
+							</a>
 						</div>
 					</div>
 				</div><!-- /.blog-post -->
