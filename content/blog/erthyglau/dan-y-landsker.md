@@ -1,7 +1,6 @@
 +++
 author = "Prifardd Idris Reynolds"
 date = "2014-01-01T00:00:00+00:00"
-draft = true
 image = ""
 imageCaption = ""
 standfirst = "Cerdd ar gyfer Rhifyn 1 Dan y Landsker"
