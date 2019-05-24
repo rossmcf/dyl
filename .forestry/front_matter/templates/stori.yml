@@ -1,7 +1,6 @@
 ---
 label: Stori
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: title
@@ -45,4 +44,5 @@ fields:
   name: draft
   label: Drafft
 pages:
+- content/blog/erthyglau/dan-y-landsker.md
 - content/blog/newyddion/nigel-yn-nodi-llwyddiannau-disgyblion-aberdaugleddau.md
