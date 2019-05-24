@@ -1,6 +1,6 @@
 +++
 author = "Idris Reynolds"
-date = "2014-01-01T00:00:00+00:00"
+date = "2007-03-01T00:00:00+00:00"
 image = ""
 imageCaption = ""
 standfirst = "Cerdd ar gyfer Rhifyn 1 Dan y Landsker"
