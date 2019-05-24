@@ -1,5 +1,5 @@
 +++
-author = "Prifardd Idris Reynolds"
+author = "Idris Reynolds"
 date = "2014-01-01T00:00:00+00:00"
 image = ""
 imageCaption = ""
@@ -35,4 +35,4 @@ title = "Dan y Landsker"
 > Fel na fo'n y Benfro gyfoes<br />
 > 'Down below' na landsker mwy.<br />
 
-Prifardd Idris Reynolds
+— **Prifardd Idris Reynolds**
