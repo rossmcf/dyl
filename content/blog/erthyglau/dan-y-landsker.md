@@ -9,31 +9,31 @@ standfirstSummary = "Cerdd ar gyfer Rhifyn 1 Dan y Landsker"
 title = "Dan y Landsker"
 
 +++
-> Lle bu Gerallt Gymro unwaith  
-> Yn cenhadu ar ei daith  
-> Troedio wna'i ddilynwyr heddiw  
-> Yr un llwybrau — dros yr iaith.  
-> Wrth i'r ymgyrch atgyfnerthu,  
-> Wrth i'r gweithwyr ennill tir
-> Cofiwn am y fyddin honno
-> Laniodd gynt ym Maenor-byr.
+> Lle bu Gerallt Gymro unwaith<br />
+> Yn cenhadu ar ei daith  <br />
+> Troedio wna'i ddilynwyr heddiw<br />  
+> Yr un llwybrau — dros yr iaith.  <br />
+> Wrth i'r ymgyrch atgyfnerthu,  <br />
+> Wrth i'r gweithwyr ennill tir<br />
+> Cofiwn am y fyddin honno<br />
+> Laniodd gynt ym Maenor-byr.<br />
 >
-> Lle bu Normyn balch y cestyll
-> Yn teyrnasu yn eu tro
-> Fe ddaw Waldo 'nôl i Hwlffordd
-> I gysodi'r papur bro.
-> Lle bu niwloedd yn lledrithio
-> Chwedlau hen y broydd hyn
-> Llifo eto wna'r ddwy Gleddau
-> Yn Gymraeg, mewn du a gwyn.
+> Lle bu Normyn balch y cestyll<br />
+> Yn teyrnasu yn eu tro<br />
+> Fe ddaw Waldo 'nôl i Hwlffordd<br />
+> I gysodi'r papur bro.<br />
+> Lle bu niwloedd yn lledrithio<br />
+> Chwedlau hen y broydd hyn<br />
+> Llifo eto wna'r ddwy Gleddau<br />
+> Yn Gymraeg, mewn du a gwyn.<br />
 >
-> Gwelwn fod treftadaeth Dwei
-> Yn ymestyn hwnt i'r Foel
-> A bod trwch o gennin Pedr
-> Ym mro'r priddyn coch a'r oel.
-> Boed i'r fenter newydd uno
-> Y ddwy ochor, blwy' wrth blwy'
-> Fel na fo'n y Benfro gyfoes
-> 'Down below' na landsker mwy.
+> Gwelwn fod treftadaeth Dwei<br />
+> Yn ymestyn hwnt i'r Foel<br />
+> A bod trwch o gennin Pedr<br />
+> Ym mro'r priddyn coch a'r oel.<br />
+> Boed i'r fenter newydd uno<br />
+> Y ddwy ochor, blwy' wrth blwy'<br />
+> Fel na fo'n y Benfro gyfoes<br />
+> 'Down below' na landsker mwy.<br />
 
 Prifardd Idris Reynolds
