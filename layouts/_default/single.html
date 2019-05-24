@@ -1,46 +1,48 @@
 {{ define "header"}}
-    {{- partial "_shared/title.html" . -}}
-    {{- partial "_shared/navbar.html" . -}}
+{{- partial "_shared/title.html" . -}}
+{{- partial "_shared/navbar.html" . -}}
 {{ end }}
 
 {{ define "main" }}
-    <section class="row py-4 ">
-        <div class="col-md-2 px-0">
-            <header class="single-section-header">
-                <h4 class="section-title">{{ .Parent.Title }}</h4>
-            </header>
-            <!-- Article metadata goes here. -->
-            <div class="article-meta">
-				{{ if isset .Params "author" }}
-                	<a target="_blank" class="link-dark">{{ .Params.author }}</a><br>
-				{{ end }}
-				<time datetime={{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}>
-					{{ index $.Site.Data.dyddiadau (printf "%d" .Date.Day) }} {{ index $.Site.Data.misoedd (printf "%d" .Date.Month) }} {{ .Date.Year }}
-					</time>
-                </span>
-                {{/*{{ printf "%+v" .Params }}*/}}
-            </div>
-        </div>
+<section class="row py-4 ">
+	<div class="col-md-2 px-0">
+		<header class="single-section-header">
+			<h4 class="section-title">{{ .Parent.Title }}</h4>
+		</header>
+		<!-- Article metadata goes here. -->
+		<div class="article-meta">
+			{{ if isset .Params "author" }}
+			<a target="_blank" class="link-dark">{{ .Params.author }}</a><br>
+			{{ end }}
+			<time datetime={{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}>
+				{{ index $.Site.Data.dyddiadau (printf "%d" .Date.Day) }} {{ index $.Site.Data.misoedd (printf "%d" .Date.Month) }} {{ .Date.Year }}
+			</time>
+			</span>
+			{{/*{{ printf "%+v" .Params }}*/}}
+		</div>
+	</div>
 
-        <div class="row col-md-8 article">
-            <div class="d-inline-flex px-3">
-                <div class=" ">
-                    <header>
-                        <h3 class="display-4 pl-1 mb-2">{{ .Title | title }}</h3>
-                        <p class="single-standfirst pl-1 pr-2">{{ .Params.standfirst }}</p>
-                    </header>
-                    <figure class="figure ">
-                        <img class="figure-img img-fluid" src="{{ .Params.image }}"/>
-                        <figcaption class="figure-caption text-right">{{ .Params.imageCaption }}</figcaption>
-                    </figure>
-                    {{ .Content }}
-                </div>
-            </div>
-        </div>
-    </section><!-- /.row -->
+	<div class="row col-md-8 article">
+		<div class="d-inline-flex px-3">
+			<div class=" ">
+				<header>
+					<h3 class="display-4 pl-1 mb-2">{{ .Title | title }}</h3>
+					<p class="single-standfirst pl-1 pr-2">{{ .Params.standfirst }}</p>
+				</header>
+				{{ with ( .Resources.GetMatch "main" ) }}
+				<figure class="figure ">
+					<img class="figure-img img-fluid" src="{{ .Permalink }}"/>
+					<figcaption class="figure-caption text-right">{{ .Title }}</figcaption>
+				</figure>
+				{{- end }}
+				{{ .Content }}
+			</div>
+		</div>
+	</div>
+</section><!-- /.row -->
 
 {{ end }}
 
 {{ define "footer"}}
-    {{- partial "_shared/footer.html" . -}}
+{{- partial "_shared/footer.html" . -}}
 {{ end }}

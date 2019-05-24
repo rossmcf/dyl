@@ -1,87 +1,89 @@
 <!doctype html>
 <html lang="{{ .Site.LanguageCode }}">
-{{- partial "_shared/head.html" . -}}
-<body>
+	{{- partial "_shared/head.html" . -}}
+	<body>
 
-<div class="container">
-	{{- partial "_shared/title.html" . -}}
-	{{- partial "_shared/navbar.html" . -}}
+		<div class="container">
+			{{- partial "_shared/title.html" . -}}
+			{{- partial "_shared/navbar.html" . -}}
 
-	{{ range first 1 (where .Pages.ByDate.Reverse "Section" "blog") }}
-	<div class="jumbotron jumbotron-fluid bg-white py-2">
-		<div class="col-md-12 px-0">
-			<a href="{{ .Permalink }}" class="story-link">
-				<img class="img-fluid mb-2" src="{{ .Params.image }}"/>
-			</a>
-			<h4 class="blog-post-meta mb-0 section-link">{{ .Parent.Title }}</h4>
-			<a href="{{ .Permalink }}" class="story-link">
-				<h1 class="display-4">{{ .Title | title }}</h1>
-			</a>
-			<p class="headline-standfirst my-3">{{ .Params.standfirst }}</p>
-		</div>
-	</div>
-	{{ end }}
+			{{ range first 1 (where .Pages.ByDate.Reverse "Section" "blog") }}
+			<div class="jumbotron jumbotron-fluid bg-white py-2">
+				<div class="col-md-12 px-0">
+					<a href="{{ .Permalink }}" class="story-link">
+						<img class="img-fluid mb-2" src="{{ ( .Resources.GetMatch "main" ).Permalink }}" alt="{{ ( .Resources.GetMatch "main" ).Title }}"/>
+					</a>
+					<h4 class="blog-post-meta mb-0 section-link">{{ .Parent.Title }}</h4>
+					<a href="{{ .Permalink }}" class="story-link">
+						<h1 class="display-4">{{ .Title | title }}</h1>
+					</a>
+					<p class="headline-standfirst my-3">{{ .Params.standfirst }}</p>
+				</div>
+			</div>
+			{{ end }}
 
-	<hr class="mb-5"/>
+			<hr class="mb-5"/>
 
-	<main role="main" class="container px-0">
-		<div class="row">
-			<div class="col-md-8 blog-main px-0 mb-4">
-				{{ range first 5 (after 1 (where .Pages.ByDate.Reverse "Section" "blog"))}}
-				<div class="blog-post mb-0 py-4">
-					<div class="row">
-						<div class="col-md-8 px-0">
-							<h4 class="list-meta blog-post-meta mb-2 section-link">{{ .Parent.Title }}</h4>
-							<a href="{{ .Permalink }}" class="story-link">
-								<h3 class="blog-post-title">{{ .Title | title }}</h3>
-							</a>
-							<p class="list-standfirst my-3">{{ .Params.standfirstSummary }}</p>
+			<main role="main" class="container px-0">
+			<div class="row">
+				<div class="col-md-8 blog-main px-0 mb-4">
+					{{ range first 5 (after 1 (where .Pages.ByDate.Reverse "Section" "blog"))}}
+					<div class="blog-post mb-0 py-4">
+						<div class="row">
+							<div class="col-md-8 px-0">
+								<h4 class="list-meta blog-post-meta mb-2 section-link">{{ .Parent.Title }}</h4>
+								<a href="{{ .Permalink }}" class="story-link">
+									<h3 class="blog-post-title">{{ .Title | title }}</h3>
+								</a>
+								<p class="list-standfirst my-3">{{ .Params.standfirstSummary }}</p>
+							</div>
+							<div class="col-md-4">
+								<a href="{{ .Permalink }}" class="story-link">
+									{{ with (.Resources.GetMatch "main") }}
+									<img class="d-none d-md-block" width="100%" src="{{ .Permalink }}" alt="{{ .Title }}"/>
+									{{- end}}
+								</a>
+							</div>
 						</div>
-						<div class="col-md-4">
-							<a href="{{ .Permalink }}" class="story-link">
-								<img class="d-none d-md-block" width="100%" src="{{ .Params.image }}"/>
-							</a>
-						</div>
-					</div>
-				</div><!-- /.blog-post -->
-				<hr class="px-0" />
-				{{ end }}
+					</div><!-- /.blog-post -->
+					<hr class="px-0" />
+					{{ end }}
 
-			</div><!-- /.blog-main -->
+				</div><!-- /.blog-main -->
 
-			<aside class="col-md-4 blog-sidebar pl-4 pr-0">
-				<div class="p-4 mb-3 bg-light ">
-					<h4 class="font-italic">About</h4>
-					<p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur
+				<aside class="col-md-4 blog-sidebar pl-4 pr-0">
+					<div class="p-4 mb-3 bg-light ">
+						<h4 class="font-italic">About</h4>
+						<p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur
 						purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-				</div>
+					</div>
 
-				<div class="p-4">
-					<h4 class="font-italic">Archif</h4>
-					<ol class="list-unstyled mb-0">
-						<li><a href="#">Haf 2018</a></li>
-						<li><a href="#">Gaeaf 2017</a></li>
+					<div class="p-4">
+						<h4 class="font-italic">Archif</h4>
+						<ol class="list-unstyled mb-0">
+							<li><a href="#">Haf 2018</a></li>
+							<li><a href="#">Gaeaf 2017</a></li>
 
-					</ol>
-				</div>
+						</ol>
+					</div>
 
-				<div class="p-4">
-					<h4 class="font-italic">Cyfryngau Cymdeithasol</h4>
-					<ol class="list-unstyled">
-						<li><a href="#">Trydar</a></li>
-						<li><a href="#">Facebook</a></li>
-					</ol>
-				</div>
-			</aside><!-- /.blog-sidebar -->
+					<div class="p-4">
+						<h4 class="font-italic">Cyfryngau Cymdeithasol</h4>
+						<ol class="list-unstyled">
+							<li><a href="#">Trydar</a></li>
+							<li><a href="#">Facebook</a></li>
+						</ol>
+					</div>
+				</aside><!-- /.blog-sidebar -->
 
-		</div><!-- /.row -->
+			</div><!-- /.row -->
 
-	</main><!-- /.container -->
-</div> <!-- container -->
+			</main><!-- /.container -->
+		</div> <!-- container -->
 
-{{- partial "_shared/footer.html" . -}}
-{{- partial "_shared/js.html" . -}}
-{{ template "_internal/google_analytics.html" . }}
+		{{- partial "_shared/footer.html" . -}}
+		{{- partial "_shared/js.html" . -}}
+		{{ template "_internal/google_analytics.html" . }}
 
-</body>
+	</body>
 </html>
