@@ -1,0 +1,37 @@
+{{ define "header"}}
+{{- partial "_shared/title.html" . -}}
+{{- partial "_shared/navbar.html" . -}}
+{{ end }}
+
+{{ define "main" }}
+	<main role="main" class="container px-0">
+		<div class="row">
+			<div class="col-md-12 blog-main px-0 mb-4">
+				{{ range first 10 (where .Pages.ByDate.Reverse "Section" "blog")}}
+				<div class="blog-post mb-0 py-4">
+					<div class="row">
+						<div class="col-md-8 px-0">
+							<h4 class="list-meta blog-post-meta mb-2 section-link">{{ .Parent.Title }}</h4>
+							<a href="{{ .Permalink }}" class="story-link">
+								<h3 class="blog-post-title text-uppercase">{{ .Title | title }}</h3>
+							</a>
+							<p class="list-standfirst my-3">{{ .Params.standfirstSummary }}</p>
+						</div>
+						<div class="col-md-4">
+							<a href="{{ .Permalink }}" class="story-link">
+								{{ with (.Resources.GetMatch "main") }}
+								<img class="d-none d-md-block" width="100%" src="{{ .Permalink }}" alt="{{ .Title }}"/>
+								{{- end}}
+							</a>
+						</div>
+					</div>
+				</div><!-- /.blog-post -->
+				<hr class="px-0" />
+				{{ end }}
+
+			</div><!-- /.blog-main -->
+{{ end }}
+
+{{ define "footer"}}
+{{- partial "_shared/footer.html" . -}}
+{{ end }}

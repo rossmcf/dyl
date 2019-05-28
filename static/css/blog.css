@@ -16,7 +16,7 @@ body {
 	text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .sans {
 	font-family: "Proza Libre", Georgia, "Times New Roman", serif;
 }
 
@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .blog-post-title {
 	margin-bottom: .25rem;
-	font-size: 2.0rem;
+	font-size: 1.5rem;
 }
 
 .blog-post-meta {
@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .list-standfirst {
 	margin-bottom: .25rem;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 
 .list-meta {
@@ -155,14 +155,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .single-standfirst {
 	font-size: 1.25em;
+	font-style: italic;
 }
 
 .headline-standfirst {
-	font-size: 1.5em;
+	font-size: 1.25rem;
 }
 
 .section-link {
 	color: #859900;
+	font-size: 0.75rem;
+	text-transform: uppercase;
 }
 
 a.story-link {
@@ -186,4 +189,13 @@ a.story-link {
 
 p {
 	font-size: 1.25rem;
+}
+
+.section-title {
+	font-size: 0.75rem;
+	color: #859900;
+}
+
+.author-link {
+	font-size: 1.0rem;
 }

@@ -1,6 +1,7 @@
 ---
 title: "Taith y Pererin"
 standfirst: "Mae Teifryn Williams o Aberdaugleddau yn teithio o archfarchnad Almaenig i eglwys Sbaenig. "
+standfirstSummary: "Mae Teifryn Williams o Aberdaugleddau yn teithio o archfarchnad Almaenig i eglwys Sbaenig. "
 date: 2007-03-01
 author: Teifryn Williams
 publishdate: 2019-05-24

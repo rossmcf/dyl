@@ -5,29 +5,25 @@
 
 {{ define "main" }}
 <section class="row py-4 ">
-	<div class="col-md-2 px-0">
-		<header class="single-section-header">
-			<h4 class="section-title">{{ .Parent.Title }}</h4>
-		</header>
-		<!-- Article metadata goes here. -->
-		<div class="article-meta">
-			{{ if isset .Params "author" }}
-			<a target="_blank" class="link-dark">{{ .Params.author }}</a><br>
-			{{ end }}
-			<time datetime={{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}>
-				{{ index $.Site.Data.dyddiadau (printf "%d" .Date.Day) }} {{ index $.Site.Data.misoedd (printf "%d" .Date.Month) }} {{ .Date.Year }}
-			</time>
-			</span>
-			{{/*{{ printf "%+v" .Params }}*/}}
-		</div>
-	</div>
+	<div class="col-md-2 px-0"></div>
 
 	<div class="row col-md-8 article">
-		<div class="d-inline-flex px-3">
+		<div class="d-inline-flex">
 			<div class=" ">
-				<header>
-					<h3 class="display-4 pl-1 mb-2">{{ .Title | title }}</h3>
-					<p class="single-standfirst pl-1 pr-2">{{ .Params.standfirst }}</p>
+					<header class="single-section-header mb-4">
+			<h4 class="section-title text-center text-uppercase mb-0">{{ .CurrentSection.Title }}</h4>
+					<h3 class="display-4 text-center pl-1 mb-2 text-uppercase">{{ .Title | title }}</h3>
+					<p class="single-standfirst text-center px-0 mb-2">{{ .Params.standfirst }}</p>
+					<div class="article-meta">
+						<div class="byline text-center sans">
+							{{ if isset .Params "author" }}
+							<strong><a target="_blank" class="author-link text-uppercase">{{ .Params.author }}</strong></a> —
+							{{ end }}
+							<time datetime={{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}>
+								{{ index $.Site.Data.dyddiadau (printf "%d" .Date.Day) }} {{ index $.Site.Data.misoedd (printf "%d" .Date.Month) }} {{ .Date.Year }}
+							</time>
+						</div><!-- byline -->
+					</div><!-- article-meta -->
 				</header>
 				{{ with ( .Resources.GetMatch "main" ) }}
 				<figure class="figure ">

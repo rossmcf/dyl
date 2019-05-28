@@ -11,11 +11,11 @@
 			<div class="jumbotron jumbotron-fluid bg-white py-2">
 				<div class="col-md-12 px-0">
 					<a href="{{ .Permalink }}" class="story-link">
-						<img class="img-fluid mb-2" src="{{ ( .Resources.GetMatch "main" ).Permalink }}" alt="{{ ( .Resources.GetMatch "main" ).Title }}"/>
+						<img class="img-fluid mb-4" src="{{ ( .Resources.GetMatch "main" ).Permalink }}" alt="{{ ( .Resources.GetMatch "main" ).Title }}"/>
 					</a>
 					<h4 class="blog-post-meta mb-0 section-link">{{ .Parent.Title }}</h4>
 					<a href="{{ .Permalink }}" class="story-link">
-						<h1 class="display-4">{{ .Title | title }}</h1>
+						<h1 class="display-5 text-uppercase">{{ .Title | title }}</h1>
 					</a>
 					<p class="headline-standfirst my-3">{{ .Params.standfirst }}</p>
 				</div>
@@ -33,7 +33,7 @@
 							<div class="col-md-8 px-0">
 								<h4 class="list-meta blog-post-meta mb-2 section-link">{{ .Parent.Title }}</h4>
 								<a href="{{ .Permalink }}" class="story-link">
-									<h3 class="blog-post-title">{{ .Title | title }}</h3>
+									<h3 class="blog-post-title text-uppercase">{{ .Title | title }}</h3>
 								</a>
 								<p class="list-standfirst my-3">{{ .Params.standfirstSummary }}</p>
 							</div>
@@ -53,9 +53,9 @@
 
 				<aside class="col-md-4 blog-sidebar pl-4 pr-0">
 					<div class="p-4 mb-3 bg-light ">
-						<h4 class="font-italic">About</h4>
-						<p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur
-						purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+						<h4 class="font-italic">Amdanom Ni</h4>
+						<p>Mae Dan y Landsker yn cyhoeddi newyddion ac erthyglau Cymraeg o Dde Sir Benfro.</p>
+						<p><strong>Oes stori gyda chi?</strong> Cysylltwch â ni: <a href="mailto:shwmae@danylandsker.cymru">shwmae@danylandsker.cymru</a></p>
 					</div>
 
 					<div class="p-4">
