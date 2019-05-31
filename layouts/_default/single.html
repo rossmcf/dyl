@@ -26,8 +26,16 @@
 					</div><!-- article-meta -->
 				</header>
 				{{ with ( .Resources.GetMatch "main" ) }}
+				{{ $lg := .Resize "710x q90" }}
 				<figure class="figure ">
-					<img class="figure-img img-fluid" src="{{ .Permalink }}"/>
+					<picture>
+						{{$lg :=  .Resize "2220x q90" }}
+						{{$md :=  .Resize "2220x q90" }}
+						{{$sm :=  .Resize "2220x q90" }}
+						<source srcset="{{ $lg.Permalink }}" media="(min-width: 1000px)">
+						<source srcset="{{ $md.Permalink }}" media="(min-width: 800px)">
+						<img class="figure-img img-fluid mb-4" src="{{ $sm.Permalink }}" alt="{{ $sm.Title }}"/>
+					</picture>
 					<figcaption class="figure-caption text-right">{{ .Title }}</figcaption>
 				</figure>
 				{{- end }}

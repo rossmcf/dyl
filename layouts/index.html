@@ -11,7 +11,14 @@
 			<div class="jumbotron jumbotron-fluid bg-white py-2">
 				<div class="col-md-12 px-0">
 					<a href="{{ .Permalink }}" class="story-link">
-						<img class="img-fluid mb-4" src="{{ ( .Resources.GetMatch "main" ).Permalink }}" alt="{{ ( .Resources.GetMatch "main" ).Title }}"/>
+						<picture>
+							{{$lg := ( .Resources.GetMatch "main" ).Resize "2220x q90" }}
+							{{$md := ( .Resources.GetMatch "main" ).Resize "2220x q90" }}
+							{{$sm := ( .Resources.GetMatch "main" ).Resize "2220x q90" }}
+							<source srcset="{{ $lg.Permalink }}" media="(min-width: 1000px)">
+							<source srcset="{{ $md.Permalink }}" media="(min-width: 800px)">
+							<img class="img-fluid mb-4" src="{{ $sm.Permalink }}" alt="{{ $sm.Title }}"/>
+						</picture>
 					</a>
 					<h4 class="blog-post-meta mb-0 section-link">{{ .Parent.Title }}</h4>
 					<a href="{{ .Permalink }}" class="story-link">
