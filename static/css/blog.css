@@ -1,6 +1,6 @@
 /* stylelint-disable selector-list-comma-newline-after */
 body {
-	font-family:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+	font-family:"Libre Baskerville", Georgia, "Times New Roman", serif;
 }
 
 .blog-header {
@@ -9,7 +9,7 @@ body {
 }
 
 .serif {
-	font-family:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+	font-family:"Libre Baskerville", Georgia, "Times New Roman", serif;
 }
 
 .blog-header-logo:hover {
@@ -17,7 +17,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, .sans {
-	font-family: "Proza Libre", Georgia, "Times New Roman", serif;
+	font-family: "Libre Franklin", "Helvetica Neue", Arial, serif;
 }
 
 .display-4 {
@@ -188,7 +188,7 @@ a.story-link {
 }
 
 p {
-	font-size: 1.25rem;
+	font-size: 1.00rem;
 }
 
 .section-title {
