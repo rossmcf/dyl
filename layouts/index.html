@@ -13,8 +13,8 @@
 					<a href="{{ .Permalink }}" class="story-link">
 						<picture>
 							{{$lg := ( .Resources.GetMatch "main" ).Resize "2220x q90" }}
-							{{$md := ( .Resources.GetMatch "main" ).Resize "2220x q90" }}
-							{{$sm := ( .Resources.GetMatch "main" ).Resize "2220x q90" }}
+							{{$md := ( .Resources.GetMatch "main" ).Resize "800x q90" }}
+							{{$sm := ( .Resources.GetMatch "main" ).Resize "600x q90" }}
 							<source srcset="{{ $lg.Permalink }}" media="(min-width: 1000px)">
 							<source srcset="{{ $md.Permalink }}" media="(min-width: 800px)">
 							<img class="img-fluid mb-4" src="{{ $sm.Permalink }}" alt="{{ $sm.Title }}"/>
