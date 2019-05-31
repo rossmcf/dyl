@@ -47,7 +47,8 @@
 							<div class="col-md-4">
 								<a href="{{ .Permalink }}" class="story-link">
 									{{ with (.Resources.GetMatch "main") }}
-									<img class="d-none d-md-block" width="100%" src="{{ .Permalink }}" alt="{{ .Title }}"/>
+									{{ $thumb := .Resize "220x q95" }}
+									<img class="d-none d-md-block" width="100%" src="{{ $thumb.Permalink }}" alt="{{ .Title }}"/>
 									{{- end}}
 								</a>
 							</div>
