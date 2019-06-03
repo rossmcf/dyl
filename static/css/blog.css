@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6, .sans {
 
 .list-standfirst {
 	margin-bottom: .25rem;
-	font-size: 1.25rem;
+	font-size: 1.00rem;
 }
 
 .list-meta {
@@ -154,18 +154,22 @@ h1, h2, h3, h4, h5, h6, .sans {
 }
 
 .single-standfirst {
-	font-size: 1.25em;
+	font-size: 1.00rem;
 	font-style: italic;
 }
 
 .headline-standfirst {
-	font-size: 1.25rem;
+	font-size: 1.00rem;
 }
 
 .section-link {
 	color: #859900;
 	font-size: 0.75rem;
 	text-transform: uppercase;
+}
+
+.figure-caption {
+	font-size: 0.6rem;
 }
 
 a.story-link {
@@ -188,7 +192,7 @@ a.story-link {
 }
 
 p {
-	font-size: 1.00rem;
+	font-size: 0.9rem;
 }
 
 .section-title {
