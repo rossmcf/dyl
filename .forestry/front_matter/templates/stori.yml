@@ -1,0 +1,48 @@
+---
+label: Stori
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Teitl
+  description: Teitl y stori.
+  config:
+    required: true
+- type: datetime
+  name: date
+  label: Dyddiad
+  config:
+    date_format: YYYY-MM-DD
+    display_utc: true
+    required: true
+- type: text
+  name: author
+  label: Awdur
+  config:
+    required: true
+- type: text
+  name: standfirstSummary
+  label: Standfirst Summary
+  description: Brawddeg fer am y stori.
+  config:
+    required: true
+- type: textarea
+  label: standfirst
+  name: standfirst
+  description: Pennill am y stori.
+  config:
+    required: true
+- type: file
+  name: image
+  label: Llun
+- type: text
+  label: Image Caption
+  name: imageCaption
+  config:
+    required: false
+- type: boolean
+  name: draft
+  label: Drafft
+pages:
+- content/blog/erthyglau/dan-y-landsker.md
+- content/blog/newyddion/nigel-yn-nodi-llwyddiannau-disgyblion-aberdaugleddau.md

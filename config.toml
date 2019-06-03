@@ -6,6 +6,7 @@ summaryLength = 25
 copyright = "Dan y Landsker"
 enableEmoji = true
 publishDir = "public"
+relativeURLs = true
 #disqusShortname = "your-shortname-here"
 #googleAnalytics = "UA-1XXXXXXX1-1"
 

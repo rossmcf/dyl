@@ -1,36 +1,11 @@
 <!-- Begin Menu Navigation
 ================================================== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white mediumnavigation nav-down">
-    <div class="container pr-0">
-        <!-- Begin Logo -->
-        <a class="navbar-brand" href="{{ .Site.BaseURL }}/">
-
-            {{ with .Site.Params.logo }}
-            <img src="{{ . | urlize | relURL }}" alt="logo">
-            {{ else }}
-            <title id="logo-text">{{.Site.Title}}</title>
-            {{ end }}
-        </a>
-        <!-- End Logo -->
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Begin Menu -->
-        <div class="collapse navbar-collapse" id="navbarMediumish">
-            {{ $currentPage := . }}
-            <ul class="navbar-nav ml-auto">
-                {{ range .Site.Menus.main }} 
-                <li class="nav-item {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-                    <a class="nav-link" href="{{ .URL }}">{{ .Name | title }}</a>
-                </li>
-                {{ end }}
-            </ul>
-        </div>
-        <!-- End Menu -->
-    </div>
-</nav>
+<div class="nav-scroller py-1 mb-2 border-bottom">
+	<nav class="nav d-flex justify-content-between">
+		<a class="p-2 text-muted sans text-uppercase" href="/blog/newyddion">Newyddion</a>
+		<a class="p-2 text-muted sans text-uppercase" href="/blog/erthyglau">Erthyglau</a>
+		<a class="p-2 text-muted sans text-uppercase" href="/blog/digwyddiadau">Digwyddiadau</a>
+	</nav>
+</div>
 <!-- End Navigation
 ================================================== -->
